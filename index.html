@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free-Bird</title>
+    <link rel="stylesheet"
+        href="https://uploads-ssl.webflow.com/61f61f396936e00884d96cf5/css/free-bird.webflow.5bf9cbacf.css">
+    <style>
+        .loaderSvg {
+            width: 230px;
+            height: 474px;
+            position: relative;
+        }
+
+        .vh {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .svgLogo,
+        .mockup {
+            position: absolute;
+        }
+
+
+        .loader {
+            opacity: 1;
+            /* display: none; */
+            background-color: rgba(250, 235, 215, 0);
+        }
+
+        .headingspan {
+            /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
+            overflow: hidden;
+            display: flex;
+            text-align: center;
+        }
+
+        .kk {
+            transform-origin: left;
+            display: flex;
+            /* transform: translateY(20px); */
+        }
+
+        .hero-left h1 {
+            overflow: hidden;
+        }
+
+        .div-block {
+            padding-left: 8rem;
+        }
+
+        .buttonconten {
+            padding-left: 10px;
+        }
+
+        .buttonpar {
+            font-size: 9px;
+            line-height: 1.3;
+            font-weight: 600;
+        }
+
+        .appletex {
+            padding-top: 0px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .appstor {
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-top-color: hsla(204.00000000000003, 10.59%, 71.67%, 1.00);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-right-color: hsla(204.00000000000003, 10.59%, 71.67%, 1.00);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: hsla(204.00000000000003, 10.59%, 71.67%, 1.00);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-left-color: hsla(204.00000000000003, 10.59%, 71.67%, 1.00);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+
+        .appstor {
+            display: flex;
+            margin-left: 3rem;
+            padding-top: 18px;
+            padding-right: 22px;
+            padding-bottom: 18px;
+            padding-left: 22px;
+            align-items: center;
+        }
+
+        .heroheading,
+        .headingspan {
+            text-align: center;
+            justify-content: center;
+        }
+
+        /* .mainbg{
+            transform-origin: left;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+            role="banner" class="nav w-nav">
+            <div class="logo">
+                <div class="logo w-embed"><svg width="47" height="49" viewBox="0 0 47 49" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M23.2942 6.1688L16.0239 19.6501C15.8394 19.9923 15.352 20.0022 15.1537 19.6677L5.24458 2.95091C5.02524 2.58089 5.34451 2.12498 5.76723 2.20459L22.9467 5.44011C23.2793 5.50275 23.4549 5.87088 23.2942 6.1688Z"
+                            stroke="#44D7B6" stroke-width="3"></path>
+                        <path
+                            d="M23.0832 6.46411L15.9646 19.748C15.8115 20.0338 15.9665 20.3874 16.2804 20.4684L34.0768 25.0583C34.5095 25.1699 34.8601 24.7013 34.6309 24.3178L23.9531 6.44385C23.7538 6.11022 23.2667 6.12156 23.0832 6.46411Z"
+                            stroke="#44D7B6" stroke-width="3"></path>
+                        <path
+                            d="M35.695 24.6809L41.2867 16.0278C41.5017 15.6951 41.2629 15.2565 40.8667 15.2565H30.1917C29.8052 15.2565 29.5648 15.6764 29.7606 16.0097L34.844 24.6628C35.0325 24.9837 35.493 24.9935 35.695 24.6809Z"
+                            stroke="#44D7B6" stroke-width="3"></path>
+                        <path
+                            d="M38.4442 20.4356L41.1985 16.161C41.4067 15.8378 41.8864 15.8607 42.0629 16.2021L45.4139 22.6831C45.6228 23.0871 45.2276 23.5376 44.7998 23.383L38.6946 21.1767C38.3925 21.0675 38.2702 20.7057 38.4442 20.4356Z"
+                            stroke="#44D7B6" stroke-width="3"></path>
+                        <path
+                            d="M14.1435 41.8052L15.5557 22.5332C15.5949 21.9978 14.8778 21.7853 14.619 22.2555L1.64843 45.8219C1.42499 46.2278 1.82622 46.693 2.2606 46.5316L13.819 42.2373C14.0024 42.1692 14.1292 42.0003 14.1435 41.8052Z"
+                            stroke="#44D7B6" stroke-width="3"></path>
+                        <path
+                            d="M15.4627 33.6015L33.7625 25.7712C34.2037 25.5824 34.1514 24.9409 33.6855 24.8261L16.1836 20.5114C15.8815 20.4369 15.5854 20.6536 15.565 20.9641L14.767 33.1091C14.7426 33.4813 15.1197 33.7483 15.4627 33.6015Z"
+                            stroke="#44D7B6" stroke-width="3"></path>
+                    </svg></div>
+            </div>
+            <div class="div-block"><a href="#" class="nav-links">Features</a><a href="#" class="nav-links">Pricing</a><a
+                    href="#" class="nav-links">FAQ</a></div>
+            <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+        </div>
+        <main class="main">
+            <div class="herov-2">
+                <div class="hero-left">
+                    <h1 class="heroheading">
+                        <span class="headingspan">
+                            <span class="kk">Accounting app</span>
+                            <br>
+                        </span>to manage your lending business.
+                    </h1>
+                    <div class="buttoncontainer">
+                        <div class="appstore"><img
+                                src="https://uploads-ssl.webflow.com/61f61f396936e00884d96cf5/61ff93cf9de58b62172baf88_Apple%20Icon.png"
+                                loading="lazy" alt="">
+                            <div class="buttonconten">
+                                <p class="buttonpara">Download on <br></p>
+                                <p class="appletext">App Store</p>
+                            </div>
+                        </div>
+                        <div class="playstore"><img
+                                src="https://uploads-ssl.webflow.com/61f61f396936e00884d96cf5/61ff93cb69bdf80a150a5129_googleIcon.png"
+                                loading="lazy" alt="">
+                            <div class="buttonconten">
+                                <p class="buttonpara">Download on <br></p>
+                                <p class="appletext">Play Store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="v2image">
+                        <img src="https://uploads-ssl.webflow.com/61f61f396936e00884d96cf5/62020d0f8e51c1397fb322f5_iPhone%20mockupp.png"
+                            loading="lazy" sizes="(max-width: 479px) 100vw, 230px"
+                            srcset="https://uploads-ssl.webflow.com/61f61f396936e00884d96cf5/62020d0f8e51c1397fb322f5_iPhone%20mockupp-p-500.png 500w, https://uploads-ssl.webflow.com/61f61f396936e00884d96cf5/62020d0f8e51c1397fb322f5_iPhone%20mockupp.png 816w"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="mainbg"></div>
+            <div class="loader">
+                <div class="w-embed loaderSvg">
+                    <svg class="svgLogo" width="230" height="475" viewBox="0 0 230 475" fill="none">
+                        <use xlink:href="#svg1"></use>
+                    </svg>
+                    <svg class="mockup" width="230" height="475" viewBox="0 0 230 475" fill="none">
+                        <use xlink:href="#svg2"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="vh"></div>
+        </main>
+    </div>
+
+    <div style="display: flex;">
+        <div class="appstor">
+            <img src="https://uploads-ssl.webflow.com/61f61f396936e00884d96cf5/61ff93cf9de58b62172baf88_Apple%20Icon.png"
+                loading="lazy" alt="">
+            <div class="buttonconten">
+                <p class="buttonpar">Download on <br></p>
+                <p class="appletex">App Store</p>
+            </div>
+        </div>
+        <div class="appstor">
+            <img src="https://uploads-ssl.webflow.com/61f61f396936e00884d96cf5/61ff93cf9de58b62172baf88_Apple%20Icon.png"
+                loading="lazy" alt="">
+            <div class="buttonconten">
+                <p class="buttonpar">Download on <br></p>
+                <p class="appletex">App Store</p>
+            </div>
+        </div>
+    </div>
+    <div class="some"></div>
+
+    <script src="test.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="ap.js"></script>
+    
+
+</body>
+
+</html>
